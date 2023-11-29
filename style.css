@@ -112,4 +112,8 @@ header{
         grid-template-columns: 200px;
         padding: 20px 15%;
     }
+    #ingre{
+        position:relative;
+        bottom:770px;
+    }
 }
