@@ -1,13 +1,13 @@
 const slogan=document.getElementsByClassName('slogan')[0]
 let slogans=['Planning meals for your wellbeing','Plan your meals anytime and anywhere','The meal planner that rocks','The meal planner that cares','Get your diet organized','The ultimate gift for your health']
-slogan.innerText=slogans[parseInt(Math.random(Math.random)*6)]
+slogan.innerText=slogans[parseInt(Math.random(Math.random)*slogans.length)]
 
 const randommeal=document.getElementsByClassName('random-meal')[0]
 const ingredetail=document.getElementById("ingre")
 
 function getData(){
     axios.get('https://www.themealdb.com/api/json/v1/1/random.php').then((res)=>{
-        console.log(res.data)
+        // console.log(res.data)
         const imagerandom=document.createElement('img')
         imagerandom.setAttribute('src',res.data.meals[0].strMealThumb);
         imagerandom.setAttribute('height','200px')
@@ -62,7 +62,7 @@ search.onclick=click;
 function click(){
     headofsearch.innerText=`list of searched category : ${searchbar.value}`;
     axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchbar.value}`).then((res)=>{
-        console.log(res.data)
+        // console.log(res.data)
         const result=res.data.meals
         bodyofsearch.innerHTML=''
         result.forEach((user)=>{
