@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="slogan">The meal planner that cares</div>
+        <div class="brief"><span> People who cook daily for themselves are frustrated with one question i.e., “What to cook today”. <br>
+            We have made a website which will give you answer for this by recommending you a random meal <br>
+            with a list of search items you made in past for stop repetition.</span></div>
+        <div class="inputbox">
+            <input type="text" placeholder="Seach bar" class="search-bar" value="">
+            <button class="search">Search</button>
+        </div>
+    </header>
+    <div class="Meal-of-day">
+        <h1 class="head">Meal of the day</h1>
+        <div class="random-meal" onclick="document.getElementById('ingre').style.display='block'">
+        </div class="Float">
+            <div id="ingre">
+                <span onclick="document.getElementById('ingre').style.display='none'" style="cursor: pointer; float: right;">&times;</span>
+            </div>
+        </div>
+    <div class="list-of-search-category">
+        <h1 class="head-of-search"></h1>
+        <div class="body-of-search"></div>
+
+    </div>
+</body>
+<script src="work.js"></script>
+</html>

@@ -1,0 +1,115 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+header{
+    background-image:url('Assets/background image.png');
+    padding: 80px 0px 50px 0px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slogan{
+    font-size: 40px;
+    font-family:cursive;
+    padding: 30px;
+}
+
+.brief{
+    padding: 25px;
+}
+
+.search-bar{
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(173, 172, 172);
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    left: 58px;
+}
+
+.search{
+    width: 100px;
+    border-radius: 30px;
+    position: relative;
+    right: 58px;
+    padding: 5px;
+}
+    .search:active{
+        background-color: burlywood;
+    }
+
+.head-of-search,.head{
+    background-color: rgb(173, 172, 172) ;
+    text-align: center;
+    width: 60%;
+    border-radius: 30px;
+    margin:30px 20%;
+}
+
+.random-meal{
+    margin: 20px 35%;
+}
+
+.body-of-search{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-column-gap: 100px;
+    padding: 50px 15%;
+}
+
+
+#ingre{
+    margin: 0px auto;
+    /* align-items: center; */
+    position:relative;
+    bottom:700px;
+    padding: 30px;
+    display: none;
+    background-color: rgb(177, 177, 177);
+    text-align: left;
+    width: fit-content;
+    box-shadow: 0px 0px 500px 20px black;
+}
+
+@media (max-width: 530px){
+    header{
+        padding: 40px 0px 50px 0px;
+    }
+    .slogan{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .brief{
+        padding: 10px;
+    }
+    .search-bar{
+        width: 70%;
+        text-align: left;
+        position: relative;
+        left: 35px;
+    }
+    .search{
+        width: 60px;
+        position: relative;
+        right: 35px;
+    }
+    .head-of-search,.head{
+        width: 80%;
+        margin:30px 10%;
+    }
+    .random-meal{
+        margin: 20px 20%;
+    }
+    .body-of-search{
+        grid-template-columns: 200px;
+        padding: 20px 15%;
+    }
+}
